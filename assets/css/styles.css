@@ -1,0 +1,50 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #232323; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+}
+
+header, footer {
+    background-color: #000; /* Color principal negro */
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px; /* Puntas redondeadas */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #333; /* Color de fondo oscuro */
+    padding: 20px;
+    border-radius: 10px; /* Puntas redondeadas */
+}
+
+h1, h2 {
+    color: #fff; /* Color de texto blanco */
+}
+
+a {
+    color: #FFD700; /* Color de acento dorado */
+}
