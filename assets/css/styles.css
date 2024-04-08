@@ -3,15 +3,27 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #232323; /* Color de fondo oscuro */
-    color: #fff; /* Color de texto blanco */
+    background-color: #232323;
+    color: #fff;
 }
 
 header, footer {
-    background-color: #000; /* Color principal negro */
+    background-color: #000;
     text-align: center;
     padding: 20px 0;
-    border-radius: 10px; /* Puntas redondeadas */
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 nav ul {
@@ -23,11 +35,30 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    animation: slideInRight 0.5s ease-in-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333;
 }
 
 main {
@@ -36,15 +67,29 @@ main {
 
 section {
     margin-bottom: 20px;
-    background-color: #333; /* Color de fondo oscuro */
+    background-color: #333;
     padding: 20px;
-    border-radius: 10px; /* Puntas redondeadas */
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 h1, h2 {
-    color: #fff; /* Color de texto blanco */
+    color: #fff;
 }
 
 a {
-    color: #FFD700; /* Color de acento dorado */
+    color: #FFD700;
+}
+
+a:hover {
+    color: #FFA500;
 }
